@@ -7,6 +7,11 @@
 
 ![Summer of Code Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1688114955/Summer_2_owummy.png)
 
+# SUBMISSION
+## Deployment
+#### _(please note, your team must also include the deployed links in the usual submission in Hackapp)_
+The project is deployed and can be accessed at [http://your-deployed-link.com](http://your-deployed-link.com).
+
 ## Criteria
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
@@ -16,6 +21,7 @@ In this section, we will briefly discuss how our team addressed the applicable c
 - ✨ Clear use of Github Projects or other agile tool
 - ✨ Presentation Quality - Present as if you are pitching it to client
 
+# ABOUT SUBMISSION
 ## Intro
 One or two paragraphs providing an overview of our project, including the theme - whether it is one of the 7 themes or our own team's theme.
 
