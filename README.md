@@ -1,6 +1,11 @@
-# 🌞🚵 Summer of Code 🏄🏖️
-![Summer of Code Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1688114955/Summer_2_owummy.png)
 
+
+<h1 align="center"><strong>🌞🚵 Summer of Code 🏄🏖️</strong>
+
+</h1>
+
+
+![Summer of Code Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1688114955/Summer_2_owummy.png)
 
 ## Criteria
 In this section, we will briefly discuss how our team addressed the applicable criteria:
