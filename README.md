@@ -23,7 +23,7 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
 # ABOUT SUBMISSION
 ## Intro
-One or two paragraphs providing an overview of our project, including the theme - whether it is one of the 7 themes or our own team's theme.
+One or two paragraphs providing an overview of our project
 
 ## Goal
 The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
