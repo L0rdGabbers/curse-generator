@@ -17,11 +17,11 @@ The project is deployed and can be accessed at [http://your-deployed-link.com](h
 ## Criteria
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
-- ✨ Creative design that enhances user-experience
-- ✨ Project fits theme of Halloween
-- ✨ Responsive and accessible for different screen sizes
-- ✨ Project is well planned using Github Projects
-- ✨ Overall project focus is realistic and has a sense of completeness
+- 🎃 Creative design that enhances user-experience
+- 🎃 Project fits theme of Halloween
+- 🎃 Responsive and accessible for different screen sizes
+- 🎃 Project is well planned using Github Projects
+- 🎃 Overall project focus is realistic and has a sense of completeness
 
 # ABOUT SUBMISSION
 ## Intro
