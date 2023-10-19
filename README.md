@@ -1,11 +1,13 @@
 
-
-<h1 align="center"><strong>🌞🚵 Summer of Code 🏄🏖️</strong>
+<h3>THIS TEMPLATE IS ONLY TO BE USED ON THE OCTOBER HACKATHON PROJECT</h3>
+<h4>Please do not use it for the course project work</h4>
+<br>
+<h1 align="center"><strong>🎃🎃🎃 Phantom Forge: A Halloween Hackathon 🎃🎃🎃</strong>
 
 </h1>
 
 
-![Summer of Code Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1688114955/Summer_2_owummy.png)
+<img src="https://res.cloudinary.com/djdefbnij/image/upload/v1695815394/October-banner_alm4vx.jpg" alt="PhantomForgeBanner" width="1200"/>
 
 # SUBMISSION
 ## Deployment
@@ -15,11 +17,11 @@ The project is deployed and can be accessed at [http://your-deployed-link.com](h
 ## Criteria
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
-- ✨ Project is 100% Mobile First
-- ✨ Project uses browser location or device camera
-- ✨ Project aligns well to the Hackathon Theme
-- ✨ Clear use of Github Projects or other agile tool
-- ✨ Presentation Quality - Present as if you are pitching it to client
+- ✨ Creative design that enhances user-experience
+- ✨ Project fits theme of Halloween
+- ✨ Responsive and accessible for different screen sizes
+- ✨ Project is well planned using Github Projects
+- ✨ Overall project focus is realistic and has a sense of completeness
 
 # ABOUT SUBMISSION
 ## Intro
@@ -37,5 +39,5 @@ The goal section provides a concise summary of the main objective or purpose of 
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
 ## Credits
-We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
+In the credits section, we provide information about the sources used
 
