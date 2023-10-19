@@ -27,7 +27,7 @@ One or two paragraphs providing an overview of our project
 - AJ McCredie 
 - Gabriel Marriage
 - Marelius Moen 
-- Marlon Seglos?
+- Marlon Mandaya
 - Sam O'Brien-Olinger 
 - Uju Adimora
 
