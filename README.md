@@ -1,9 +1,5 @@
 
-<h3>THIS TEMPLATE IS ONLY TO BE USED ON THE OCTOBER HACKATHON PROJECT</h3>
-<h4>Please do not use it for the course project work</h4>
-<br>
 <h1 align="center"><strong>🎃🎃🎃 Phantom Forge: A Halloween Hackathon 🎃🎃🎃</strong>
-
 </h1>
 
 
@@ -26,6 +22,14 @@ In this section, we will briefly discuss how our team addressed the applicable c
 # ABOUT SUBMISSION
 ## Intro
 One or two paragraphs providing an overview of our project
+
+## Team Collaborators
+- AJ McCredie 
+- Gabriel Marriage
+- Marelius Moen 
+- Marlon Seglos?
+- Sam O'Brien-Olinger 
+- Uju Adimora
 
 ## Goal
 The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
