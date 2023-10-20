@@ -4,3 +4,14 @@
     background-image: url('../images/bats-and-moon.jpg');
     background-size: cover;
 }
+
+/* Apply Amatic font to h1, h2, and h3 */
+h1, h2, h3 {
+    font-family: 'Amatic SC', cursive;
+}
+  
+  /* Apply Neucha font to regular paragraph text */
+  p {
+    font-family: 'Neucha', cursive;
+}
+  
