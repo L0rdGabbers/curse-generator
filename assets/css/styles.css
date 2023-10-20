@@ -1,5 +1,5 @@
 html {
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 .purple-bg {
@@ -17,22 +17,19 @@ h1, h2, h3, h5, a, p, label, input, button {
 
 /* style for the Navbar */
 .navbar a {
-    color: #217712;
-    font-family: 'cursive';
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
     transition: color 0.3s;
 }
 
 /* color to purple on hover */
 .navbar a:hover {
-    color: #33004D;
-    font-family: 'cursive';
+    color: #217712;
 }
 .nav-item.active{
-    color: #33004D;;
+    color: #fff;;
     text-decoration: underline;  
 }
-
-
   
   /* Apply Neucha font to regular paragraph text */
 p, input, button {
@@ -56,7 +53,7 @@ p, input, button {
 
 /* syling the contact page*/
 
-.container {
+.contact-container {
     text-align: center;
     padding: 20px;
 }
@@ -124,7 +121,7 @@ input[type="email"]
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    color: red;
+    color: #217712;
     border: #5f0c0c;
     border-radius: 5px;
     outline: none;
