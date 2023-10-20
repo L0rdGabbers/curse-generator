@@ -68,3 +68,40 @@ p, input, button {
     border-radius: 10px;
     text-align: left;
 }
+
+
+/* Style for the video pop-ups */
+.video-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-thumbnails a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for the pop-up container */
+#popup {
+    /* Update pop-up size and position as needed */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#popup iframe {
+    width: 100%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+}
+#video-label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
