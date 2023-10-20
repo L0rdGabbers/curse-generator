@@ -15,6 +15,24 @@ h1, h2, h3, h5, a {
     font-size: xx-large;
     font-weight: bold;
 }
+
+/* style for the Navbar */
+.navbar a {
+    color: #217712 /* Set the color to red */
+    font-family:, cursive;
+    transition: color 0.3s; 
+}
+
+/* color to purple on hover */
+.navbar a:hover {
+    color: rgb#33004D;;
+    font-family: 'Your Second Cursive Font', cursive; 
+}
+.nav-item.active{
+    color: #33004D;;
+    text-decoration: underline;  
+}
+
   
   /* Apply Neucha font to regular paragraph text */
 p, input, button {
