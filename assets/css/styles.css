@@ -9,8 +9,7 @@ html {
     background-attachment: fixed;
 }
 
-/* Apply Amatic font to h1, h2, and h3 */
-h1, h2, h3, h5, a {
+h1, h2, h3, h5, a, p, label, input, button {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
     font-weight: bold;
@@ -18,20 +17,21 @@ h1, h2, h3, h5, a {
 
 /* style for the Navbar */
 .navbar a {
-    color: #217712 /* Set the color to red */
-    font-family:, cursive;
-    transition: color 0.3s; 
+    color: #217712;
+    font-family: 'cursive';
+    transition: color 0.3s;
 }
 
 /* color to purple on hover */
 .navbar a:hover {
-    color: rgb#33004D;;
-    font-family: 'Your Second Cursive Font', cursive; 
+    color: #33004D;
+    font-family: 'cursive';
 }
 .nav-item.active{
     color: #33004D;;
     text-decoration: underline;  
 }
+
 
   
   /* Apply Neucha font to regular paragraph text */
@@ -52,6 +52,129 @@ p, input, button {
 .curse-level a {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+/* syling the contact page*/
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2rem;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Style the contact box */
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/bats-and-moon.jpg');
+    /* background-color: #410808; */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style the left side of the contact box */
+.contact-left {
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+}
+
+/* Style the form */
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the input groups */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 48%;
+}
+.padding {
+    padding-top: 10px ;
+}
+/* Style labels */
+label {
+    font-weight: bold;
+    display: block;
+    color: rgb(201, 191, 191);
+}
+
+/* Style form controls */
+input[type="text"],
+input[type="email"]
+ {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    color: red;
+    border: #5f0c0c;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style the right side of the contact box */
+.contact-right {
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+}
+
+
+
+/* Style the submit button */
+.submit-button {
+    background-color: #42043f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the button */
+.submit-button:hover {
+    background-color: #25061e;
+}
+
+
+/* Style the submit button (you can add a class to the button for styling) */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the button */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the form's text area */
+textarea {
+    width: 100% ;
+    outline: none;
+    
 }
 
 .container {
