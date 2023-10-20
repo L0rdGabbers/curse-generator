@@ -68,3 +68,33 @@ p, input, button {
     border-radius: 10px;
     text-align: left;
 }
+/*logo*/
+.logo{
+    height: 100px;
+    width: 200px;
+    animation: spookyFlicker 2s infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.25);
+  }
+  /*logo animation*/
+  @keyframes spookyFlicker {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
