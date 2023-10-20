@@ -1,5 +1,6 @@
 
 .purple-bg {
     background-color: #33004D;
-
+    background-image: url('../images/bats-and-moon.jpg');
+    background-size: cover;
 }
