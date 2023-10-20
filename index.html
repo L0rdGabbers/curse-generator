@@ -43,18 +43,106 @@
             <div class="col-md-4 offset-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Who deserves a curse?</h5>
+                        <h5 class="card-title text-center" aria-label="Curse whomever you want!">Who deserves a curse?</h5>
                         <div class="input-group input-group-lg">
                             <div class="input-group-prepend">
                             </div>
                             <input type="text" class="form-control text-center" aria-label="Large"
                                 aria-describedby="inputGroup-sizing-sm" placeholder="Who's your worst enemy?">
+
+                            <section class="sections">
+                                <div id="error">
+                                    <h2 aria-label="Insert your victim's name below">
+                                        Step 1: Who's going to be your victim!
+                                    </h2>
+                                    <input
+                                        id="name"
+                                        name="name"
+                                        type="text"
+                                        placeholder="Your Victim's Name Here"
+                                        aria-label="Insert your victim's name below"
+                                        />
+                                </div>
+                                </section>
                         </div>
                         <h5 class="card-title text-center">How severe shall it be?</h5>
-                        <div class="curse-level text-center">
+                        <!-- <div class="curse-level text-center">
                             <a href="#" class="btn btn-primary">Basic curse</a>
                             <a href="#" class="btn btn-primary">FULL ON!!</a>
-                        </div>
+                        </div> -->
+
+                         <section class="sections">
+                            <div>
+                               <h2>Step 2: Click Here to start your Curse!</h2>
+                            </div>
+                            <div>
+                               <button
+                                  class="scary-sound button curse-button disabled"
+                                  data-index="1"
+                                  id="firstButton"
+                                  aria-label="Start your Curse!"
+                                  >
+                               Curse!
+                               </button>
+                            </div>
+                            <div>
+                              <output class="output">
+                                 <b id="firstResult"></b>
+                              </output>
+                            </div>
+                         </section>
+                         <section class="sections">
+                            <div>
+                               <h2>Step 3: Click Here to get the middle of your Curse!</h2>
+                            </div>
+                            <div>
+                               <button
+                                  class="scary-sound button curse-button disabled"
+                                  data-index="2"
+                                  id="secondButton"
+                                  aria-label="The middle of your Curse!"
+                                  >
+                               Curse!
+                               </button>
+                            </div>
+                            <div>
+                               <output class="output" id="secondOutput">
+                                  <b id="secondResult"></b>
+                               </output>
+                            </div>
+                         </section>
+                         <section class="sections">
+                            <div>
+                               <h2>Step 4: Click Here to cast the last part of your Curse</h2>
+                            </div>
+                            <div>
+                               <button
+                                  class="scary-sound button curse-button disabled"
+                                  data-index="3"
+                                  id="thirdButton"
+                                  aria-label="The last part of your Hex"
+                                  >
+                               Curse!
+                               </button>
+                            </div>
+                            <div>
+                               <output class="output" id="thirdOutput">
+                                  <b id="thirdResult"></b>
+                               </output>
+                            </div>
+                         </section>
+                         <section>
+                            <div>
+                               <div>
+                                  <button id=" finalButton"  class="disabled scary-sound" aria-label="Cast your Curse">
+                                     <b id="fullPhrase">Step 5: Click Here - "Your Curse is Now Ready to be Cast...DO IT"</b>
+                                  </button>
+                               </div>
+                               <output class="output">
+                                  <b id="finalResult"></b>
+                               </output>
+                            </div>
+
                     </div>
                 </div>
             </div>
@@ -69,7 +157,17 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+    <script>
+        // Function for playing a sound
+const audio = new Audio("assets/audio/evil-laugh-2.mp3");
+const buttons = document.querySelectorAll("button");
 
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+    </script>
     <script src="./assets/js/script.js"></script>
 </body>
 

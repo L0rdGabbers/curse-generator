@@ -6,12 +6,13 @@ html {
     background-color: #33004D;
     background-image: url('../images/bats-and-moon.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
-/* Apply Amatic font to h1, h2, and h3 */
-h1, h2, h3, a, p,  label, input, button{
+h1, h2, h3, h5, a, p, label, input, button {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
+    font-weight: bold;
 }
 
 /* style for the Navbar */
@@ -34,7 +35,7 @@ h1, h2, h3, a, p,  label, input, button{
 
   
   /* Apply Neucha font to regular paragraph text */
-p {
+p, input, button {
     font-family: 'Neucha', cursive;
 }
 
@@ -53,11 +54,7 @@ p {
     margin-right: 15px;
 }
 
-
-
-
 /* syling the contact page*/
-
 
 .container {
     text-align: center;
@@ -158,9 +155,7 @@ input[type="email"]
 }
 
 
-
-
-/* Style the submit button (you can add a class to the button for styling) *
+/* Style the submit button (you can add a class to the button for styling) */
 button[type="submit"] {
     background-color: #007bff;
     color: white;
@@ -170,7 +165,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-/* Add hover effect to the button *
+/* Add hover effect to the button */
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
@@ -182,4 +177,54 @@ textarea {
     
 }
 
-/* Add any additional styling as needed */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.semi-opaque-box {
+    background-color: rgba(130, 218, 109, 0.55); /* Green color with 70% opacity */
+    padding: 20px;
+    border: 5px solid rgb(255, 255, 255); /* Black border for contrast */
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+/* Style for the video pop-ups */
+.video-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-thumbnails a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for the pop-up container */
+#popup {
+    /* Update pop-up size and position as needed */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#popup iframe {
+    width: 100%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+}
+#video-label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
