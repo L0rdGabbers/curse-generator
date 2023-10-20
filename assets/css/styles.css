@@ -1,3 +1,6 @@
+html {
+    font-size: x-large;
+}
 
 .purple-bg {
     background-color: #33004D;
@@ -6,12 +9,13 @@
 }
 
 /* Apply Amatic font to h1, h2, and h3 */
-h1, h2, h3 {
+h1, h2, h3, a {
     font-family: 'Amatic SC', cursive;
+    font-size: xx-large;
 }
   
   /* Apply Neucha font to regular paragraph text */
-  p {
+p {
     font-family: 'Neucha', cursive;
 }
 
