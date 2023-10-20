@@ -18,3 +18,18 @@ h1, h2, h3, a {
 p {
     font-family: 'Neucha', cursive;
 }
+
+/* edit input background color*/
+.form-control {
+    background-color: #75cb826b;
+}
+
+/* edit curse-level buttons*/
+.card-body a {
+    background-color: #75cb826b;
+    color: black;
+}
+.curse-level a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
