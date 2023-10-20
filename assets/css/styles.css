@@ -6,16 +6,18 @@ html {
     background-color: #33004D;
     background-image: url('../images/bats-and-moon.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Apply Amatic font to h1, h2, and h3 */
-h1, h2, h3, a {
+h1, h2, h3, h5, a {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
+    font-weight: bold;
 }
   
   /* Apply Neucha font to regular paragraph text */
-p {
+p, input, button {
     font-family: 'Neucha', cursive;
 }
 
@@ -32,4 +34,19 @@ p {
 .curse-level a {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.semi-opaque-box {
+    background-color: rgba(130, 218, 109, 0.55); /* Green color with 70% opacity */
+    padding: 20px;
+    border: 5px solid rgb(255, 255, 255); /* Black border for contrast */
+    border-radius: 10px;
+    text-align: left;
 }
