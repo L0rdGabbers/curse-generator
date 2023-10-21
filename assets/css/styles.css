@@ -202,13 +202,26 @@ textarea {
     
 }
 
-/* footer*/
+/* this footer needs review*/
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     padding: 50px;
+}
+/*new footer code*/
+.footer_bg {
+    position: sticky;
+    background-color: #000000;
+    top:100%;
+}
+
+/*footer hover*/
+.footer_icon i:hover,
+.footer_copyright:hover,
+.footer_name:hover{
+    color: #8cc63e;
 }
 
 .semi-opaque-box {
