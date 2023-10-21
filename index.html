@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beetlejuice Curse Generator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Neucha&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -36,113 +38,93 @@
                 </ul>
             </div>
         </nav>
-        
-        
+
+
         </div>
     </header>
     <main>
         <div class="col-12">
             <div class="col-md-4 offset-md-4">
-                <div class="card">
+                <div class="card semi-opaque-box">
                     <div class="card-body">
-                        <h5 class="card-title text-center" aria-label="Curse whomever you want!">Who deserves a curse?</h5>
-                        <div class="input-group input-group-lg">
-                            <div class="input-group-prepend">
-                            </div>
-                            <section class="sections">
-                                <div id="error">
-                                    <h2 aria-label="Insert your victim's name below">
-                                        Step 1: Who's going to be your victim!
-                                    </h2>
-                                    <input
-                                        id="name"
-                                        name="name"
-                                        type="text"
-                                        placeholder="Your Victim's Name Here"
-                                        aria-label="Insert your victim's name below"
-                                        />
-                                </div>
-                                </section>
-                        </div>
-                        <h5 class="card-title text-center">How severe shall it be?</h5>
-                        <!-- <div class="curse-level text-center">
+                        <section class="sections">
+                                <h2 aria-label="Insert your victim's name below">
+                                    Step 1: Who's going to be your victim?
+                                </h2>
+                                <input id="name" name="name" type="text" placeholder="Your Victim's Name Here"
+                                    aria-label="Insert your victim's name below" />
+                        </section>
+                    </div>
+                    <h2 class="card-title text-center">How severe shall it be?</h2>
+                    <!-- <div class="curse-level text-center">
                             <a href="#" class="btn btn-primary">Basic curse</a>
                             <a href="#" class="btn btn-primary">FULL ON!!</a>
                         </div> -->
 
-                         <section class="sections">
+                    <section class="sections">
+                        <div>
+                            <h2>Step 2: Click Here to start your Curse!</h2>
+                        </div>
+                        <div>
+                            <button class="scary-sound button curse-button disabled" data-index="1" id="firstButton"
+                                aria-label="Start your Curse!">
+                                Curse!
+                            </button>
+                        </div>
+                        <div>
+                            <output class="output">
+                                <b id="firstResult"></b>
+                            </output>
+                        </div>
+                    </section>
+                    <section class="sections">
+                        <div>
+                            <h2>Step 3: Click Here to get the middle of your Curse!</h2>
+                        </div>
+                        <div>
+                            <button class="scary-sound button curse-button disabled" data-index="2" id="secondButton"
+                                aria-label="The middle of your Curse!">
+                                Curse!
+                            </button>
+                        </div>
+                        <div>
+                            <output class="output" id="secondOutput">
+                                <b id="secondResult"></b>
+                            </output>
+                        </div>
+                    </section>
+                    <section class="sections">
+                        <div>
+                            <h2>Step 4: Click Here to cast the last part of your Curse</h2>
+                        </div>
+                        <div>
+                            <button class="scary-sound button curse-button disabled" data-index="3" id="thirdButton"
+                                aria-label="The last part of your Hex">
+                                Curse!
+                            </button>
+                        </div>
+                        <div>
+                            <output class="output" id="thirdOutput">
+                                <b id="thirdResult"></b>
+                            </output>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
                             <div>
-                               <h2>Step 2: Click Here to start your Curse!</h2>
+                                <button id="finalButton" class="disabled scary-sound" aria-label="Cast your Curse">
+                                    <b id="fullPhrase">Quick! Click Here - This will cast the curse on your
+                                        victim!</b>
+                                </button>
                             </div>
-                            <div>
-                               <button
-                                  class="scary-sound button curse-button disabled"
-                                  data-index="1"
-                                  id="firstButton"
-                                  aria-label="Start your Curse!"
-                                  >
-                               Curse!
-                               </button>
-                            </div>
-                            <div>
-                              <output class="output">
-                                 <b id="firstResult"></b>
-                              </output>
-                            </div>
-                         </section>
-                         <section class="sections">
-                            <div>
-                               <h2>Step 3: Click Here to get the middle of your Curse!</h2>
-                            </div>
-                            <div>
-                               <button
-                                  class="scary-sound button curse-button disabled"
-                                  data-index="2"
-                                  id="secondButton"
-                                  aria-label="The middle of your Curse!"
-                                  >
-                               Curse!
-                               </button>
-                            </div>
-                            <div>
-                               <output class="output" id="secondOutput">
-                                  <b id="secondResult"></b>
-                               </output>
-                            </div>
-                         </section>
-                         <section class="sections">
-                            <div>
-                               <h2>Step 4: Click Here to cast the last part of your Curse</h2>
-                            </div>
-                            <div>
-                               <button
-                                  class="scary-sound button curse-button disabled"
-                                  data-index="3"
-                                  id="thirdButton"
-                                  aria-label="The last part of your Hex"
-                                  >
-                               Curse!
-                               </button>
-                            </div>
-                            <div>
-                               <output class="output" id="thirdOutput">
-                                  <b id="thirdResult"></b>
-                               </output>
-                            </div>
-                         </section>
-                         <section>
-                            <div>
-                               <div id="fullPhrase">
-                                  <button id=" finalButton"  class="disabled scary-sound" aria-label="Cast your Curse">
-                                    Step 5: Click Here - "Your Curse is Now Ready to be Cast...DO IT
-                                  </button>
-                               </div>
-                                  <p id="finalResult" class="output"></p>
-                            </div>
+                            <output class="output">
+                                <b id="finalResult"></b>
+                            </output>
+                        </div>
 
-                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -156,14 +138,14 @@
         crossorigin="anonymous"></script>
     <script>
         // Function for playing a sound
-const audio = new Audio("assets/audio/evil-laugh-2.mp3");
-const buttons = document.querySelectorAll("button");
+        const audio = new Audio("assets/audio/evil-laugh-2.mp3");
+        const buttons = document.querySelectorAll("button");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    audio.play();
-  });
-});
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                audio.play();
+            });
+        });
     </script>
     <script src="./assets/js/script.js"></script>
 </body>
