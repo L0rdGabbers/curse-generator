@@ -9,7 +9,7 @@ html {
     background-attachment: fixed;
 }
 
-h1, h2, h3, h5, a, p, label, input, button {
+h1, h2, h3, a, p, label, input, button, output {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
     font-weight: bold;
@@ -31,8 +31,8 @@ h1, h2, h3, h5, a, p, label, input, button {
     text-decoration: underline;  
 }
   
-  /* Apply Neucha font to regular paragraph text */
-p, input, button {
+/* Apply Neucha font to regular paragraph text */
+p, input, output, button {
     font-family: 'Neucha', cursive;
 }
 
@@ -49,6 +49,47 @@ p, input, button {
 .curse-level a {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.sections {
+    text-align: left;
+}
+
+.sections > div {
+    text-align: center;
+}
+
+.sections h2, h3 {
+    text-align: left;
+    font-size: xx-large;
+}
+
+.sections button {
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    border-color: #662d92;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sections button:hover {
+    background-color: #663399;
+    color: #ffffff; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+#finalButton {
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    border-color: #662d92;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#finalButton:hover {
+    background-color: #663399;
+    color: #ffffff; 
+    transition: background-color 0.3s ease-in-out; 
 }
 
 /* syling the contact page*/
@@ -170,6 +211,7 @@ textarea {
 }
 
 .semi-opaque-box {
+    margin: 20px;
     background-color: rgba(130, 218, 109, 0.55); /* Green color with 70% opacity */
     padding: 20px;
     border: 5px solid rgb(255, 255, 255); /* Black border for contrast */
