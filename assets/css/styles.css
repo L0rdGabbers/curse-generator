@@ -53,7 +53,7 @@ p, input, button {
 
 /* syling the contact page*/
 
-.contact-container {
+.container-contact {
     text-align: center;
     padding: 20px;
 }
@@ -137,7 +137,7 @@ input[type="email"]
 
 
 /* Style the submit button */
-.submit-button {
+.submit-button-contact {
     background-color: #42043f;
     color: white;
     border: none;
@@ -147,25 +147,11 @@ input[type="email"]
 }
 
 /* Add hover effect to the button */
-.submit-button:hover {
+.submit-button-contact:hover {
     background-color: #25061e;
 }
 
 
-/* Style the submit button (you can add a class to the button for styling) */
-button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Add hover effect to the button */
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
 
 /* Style the form's text area */
 textarea {
@@ -174,11 +160,13 @@ textarea {
     
 }
 
+/* footer*/
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    padding: 50px;
 }
 
 .semi-opaque-box {
