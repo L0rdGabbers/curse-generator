@@ -288,11 +288,24 @@ textarea {
 
 /* Beetlejuice's curse styling */
 #beetlejuice {
-    min-height: 70vh
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 3rem;
+}
+
+#semi-opaque-box-curse {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(130, 218, 109, 0.55); 
+    padding: 20px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: left;
 }
 
 #headspin {
-    position: inherit;
+    position: absolute;
+    bottom: 315px;
     left: 50%;
     z-index: 1;
     width: 200px;

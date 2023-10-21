@@ -46,17 +46,17 @@
     <main>
         <div class="col-12">
             <div class="col-md-4 offset-md-4">
-                <div class="card semi-opaque-box">
+                <div id="phussy" class="card semi-opaque-box" style="display: block;">
                     <div class="card-body">
                         <section class="sections">
-                            <h2 aria-label="Insert your victim's name below">
+                            <h2 class="fw-bold fs-4" aria-label="Insert your victim's name below">
                                 Step 1: Who's going to be your victim?
                             </h2>
                             <input id="name" name="name" type="text" placeholder="Your Victim's Name Here"
-                                aria-label="Insert your victim's name below" />
+                                aria-label="Insert your victim's name below"/>
                         </section>
                     </div>
-                    <h2 class="card-title text-center">How severe shall it be?</h2>
+                    <h2 class="card-title text-center fw-bold fs-4">How severe shall it be?</h2>
 
                     <section class="sections">
                         <div>
@@ -121,22 +121,22 @@
                     </section>
                 </div>
             </div>
-            <div class="col-md-12 offset-md-1" style="display: none;">
-                <div class="row">
+            <div id="curse-and-beetlejuice" class="col-md-12" style="display:none">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-md-4">
-                        <div class="semi-opaque-box">
+                        <div id="semi-opaque-box-curse">
                             <h1>Hello darling!</h1>
                             <p>Do you know where the Taj Mahal is?</p>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-4 justify-content-center align-items-center">
                         <img id="beetlejuice" src="./assets/images/beetlejuice-standing.png">
                     </div>
 
+                    <button id="refresh">Reeeeeefresh Me</button>
                 </div>
-                <div id="headspin"></div>
             </div>
-        </div>
+            <div id="headspin" style="display:none"></div>
         </div>
     </main>
     <!--footer-->
