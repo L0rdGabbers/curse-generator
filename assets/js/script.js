@@ -1,6 +1,9 @@
 const FIRST_PHRASE = document.getElementById("firstResult");
 const SECOND_PHRASE = document.getElementById("secondResult");
 const THIRD_PHRASE = document.getElementById("thirdResult");
+// JavaScript to dynamically update the copyright year
+const currentYear = new Date().getFullYear();
+document.getElementById('copyrightYear').textContent = currentYear;
 
 // **** ELEMENT DISABLE CODE ****
 const NAME_ELEMENT = document.getElementById("name");
