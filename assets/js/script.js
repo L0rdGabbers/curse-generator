@@ -40,10 +40,10 @@ let generateCurse = function (e) {
 
   if (buttonIndex != 2) {
     CURSE_BUTTONS[buttonIndex + 1].classList.remove("disabled");
-    } else {
-      buttonFinal.classList.remove("disabled");
-    }
-};
+} else {
+    let finalButton = document.getElementById("finalButton");
+        finalButton.classList.remove("disabled");
+}
 
 // **** GENERATE RANDOM PHRASE FROM ARRAYS CODE ****
 const CURSE_BUTTONS = Array.from(document.getElementsByClassName("curse-button"));
@@ -64,8 +64,8 @@ NAME_ELEMENT.addEventListener("focusout", () =>
 );
 
 // **** GENERATE FULL HEX CODE ****
-const buttonFinal = document.getElementById("finalButton");
-buttonFinal.addEventListener("click", (e) => {
+const finalButton = document.getElementById("finalButton");
+finalButton.addEventListener("click", (e) => {
   
   if (checkName()) {
     genHex();
@@ -79,10 +79,10 @@ function checkName() {
     
     return true;
   } 
-
+  else {
   alert("please enter your victim's name to proceed");
   return false;
-}
+}}
 
 // **** BACK TO TOP AND RELOAD PAGE CODE ****
 const refreshPage = document.getElementById("refresh");
@@ -114,7 +114,7 @@ function openVideo(videoId, videoLabel) {
     var iframe = document.getElementById("video");
     iframe.src = "https://www.youtube.com/embed/" + videoId;
     document.getElementById("popup").style.display = "block";
-
+}
     // Set the label for the video
     document.getElementById("video-label").textContent = videoLabel;
 }
