@@ -120,6 +120,20 @@
                         </div>
                     </section>
                 </div>
+            </div>
+            <div class="col-md-12 offset-md-1" style="display: none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="semi-opaque-box">
+                            <h1>Hello darling!</h1>
+                            <p>Do you know where the Taj Mahal is?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <img id="beetlejuice" src="./assets/images/beetlejuice-standing.png">
+                    </div>
+
+                </div>
                 <div id="headspin"></div>
             </div>
         </div>
@@ -136,8 +150,8 @@
         crossorigin="anonymous"></script>
     <script>
         // Function for playing a sound
-        const audio = new Audio("assets/audio/evil-laugh-2.mp3");
-        const buttons = document.querySelectorAll("button");
+        const audio = new Audio("assets/audio/evil-laugh-1.mp3");
+        const buttons = document.querySelectorAll("button.scary-sound");
 
         buttons.forEach(button => {
             button.addEventListener("click", () => {
