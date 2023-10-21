@@ -7,6 +7,7 @@ html {
     background-image: url('../images/bats-and-moon.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 h1, h2, h3, a, p, label, input, button, output {
@@ -273,31 +274,39 @@ textarea {
     margin-top: 20px;
 }
 
-.video-thumbnails a {
-    text-decoration: none;
-    cursor: pointer;
+.video-thumbnails iframe {
+    border: 2px solid #fff;
+    border-radius: 2px;
 }
 
-/* Styles for the pop-up container */
-#popup {
-    /* Update pop-up size and position as needed */
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    z-index: 1;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#popup iframe {
-    width: 100%; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-}
-#video-label {
-    font-size: 20px;
+/* Styles for the pop-up video container */
+.video-label {
+    font-size: 25px;
     margin-bottom: 10px;
-    color: #662d92;
+    color: #000000;
 }
 
+/* Beetlejuice's curse styling */
+#beetlejuice {
+    min-height: 70vh
+}
+
+#headspin {
+    position: inherit;
+    left: 50%;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    margin: -76px 0 0 -76px;
+    border: 10px solid purple;
+    border-radius: 50%;
+    background-image: url(../images/scary-face-spinner.jpg);
+    background-size: contain;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

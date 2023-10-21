@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-black red-link mb-5 px-4">
             <a class="navbar-brand mx-4" href="index.html">
-                <img class="logo " src="./assets/images/logo-green.png" alt="Your Logo">
+                <img class="logo " src="./assets/images/logo-black.png" alt="Your Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,17 +57,13 @@
                         </section>
                     </div>
                     <h2 class="card-title text-center">How severe shall it be?</h2>
-                    <!-- <div class="curse-level text-center">
-                            <a href="#" class="btn btn-primary">Basic curse</a>
-                            <a href="#" class="btn btn-primary">FULL ON!!</a>
-                        </div> -->
 
                     <section class="sections">
                         <div>
-                            <h2>Step 2: Click Here to start your Curse!</h2>
+                            <h2 class="fw-bold fs-4">Step 2: Click Here to start your Curse!</h2>
                         </div>
                         <div>
-                            <button class="scary-sound button curse-button disabled" data-index="1" id="firstButton"
+                            <button class="scary-sound curse-button disabled" data-index="1" id="firstButton"
                                 aria-label="Start your Curse!">
                                 Curse!
                             </button>
@@ -80,7 +76,7 @@
                     </section>
                     <section class="sections">
                         <div>
-                            <h2>Step 3: Click Here to get the middle of your Curse!</h2>
+                            <h2 class="fw-bold fs-4">Step 3: Click Here to get the middle of your Curse!</h2>
                         </div>
                         <div>
                             <button class="scary-sound button curse-button disabled" data-index="2" id="secondButton"
@@ -96,7 +92,7 @@
                     </section>
                     <section class="sections">
                         <div>
-                            <h2>Step 4: Click Here to cast the last part of your Curse</h2>
+                            <h2 class="fw-bold fs-4">Step 4: Click Here to cast the last part of your Curse</h2>
                         </div>
                         <div>
                             <button class="scary-sound button curse-button disabled" data-index="3" id="thirdButton"
@@ -122,8 +118,23 @@
                                 <b id="finalResult"></b>
                             </output>
                         </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-12 offset-md-1" style="display: none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="semi-opaque-box">
+                            <h1>Hello darling!</h1>
+                            <p>Do you know where the Taj Mahal is?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <img id="beetlejuice" src="./assets/images/beetlejuice-standing.png">
+                    </div>
 
                 </div>
+                <div id="headspin"></div>
             </div>
         </div>
         </div>
@@ -174,8 +185,8 @@
         crossorigin="anonymous"></script>
     <script>
         // Function for playing a sound
-        const audio = new Audio("assets/audio/evil-laugh-2.mp3");
-        const buttons = document.querySelectorAll("button");
+        const audio = new Audio("assets/audio/evil-laugh-1.mp3");
+        const buttons = document.querySelectorAll("button.scary-sound");
 
         buttons.forEach(button => {
             button.addEventListener("click", () => {
