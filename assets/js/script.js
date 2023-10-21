@@ -111,14 +111,53 @@ NAME_ELEMENT.addEventListener("focusout", () =>
 );
 
 // **** GENERATE FULL HEX CODE ****
+
 const buttonFinal = document.getElementById("finalButton");
 buttonFinal.addEventListener("click", (e) => {
   
   if (checkName()) {
+    const notPhussy = document.getElementById("phussy");  
+    
+// Function to display head spinner when finalButton is clicked for a set amount of time
+
+const headspinDiv = document.getElementById('headspin');
+const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
+
+
+ //Click event listener for displayinging the head spinner
+
+// document.addEventListener('click', function (event) {
+//   if (event.target.getElementById("finalButton")){
+//     genSpin();
+//   }
+// });
+
+    genSpin();
+
     genHex();
   }
 
 });
+
+function showCurseAndBeetlejuice() {
+
+  const headspinDiv = document.getElementById('headspin');
+  const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
+
+  curseAndBeetlejuiceDiv.style.display = 'block';
+  headspinDiv.style.display = 'none';
+};
+
+function genSpin() {
+  const notPhussy = document.getElementById("phussy");
+  const headspinDiv = document.getElementById('headspin'); 
+ 
+  notPhussy.style.display = "none";
+  headspinDiv.style.display = 'block';
+
+  const timeoutDelay = 2000; // delay in ms
+  setTimeout(showCurseAndBeetlejuice, timeoutDelay);
+};
 
 // **** ENSURE USER INPUTS TEXT TO START HEX CODE ****
 function checkName() {
@@ -163,3 +202,31 @@ function openVideo(videoId, videoLabel) {
 }
     // Set the label for the video
     document.getElementById("video-label").textContent = videoLabel;
+
+
+
+
+// // Function to display head spinner when finalButton is clicked for a set amount of time
+
+// const headspinDiv = document.getElementById('headspin');
+// const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
+
+// function showCurseAndBeetlejuice() {
+//   curseAndBeetlejuiceDiv.style.display = 'block';
+//   headspinDiv.style.display = 'none';
+
+//   const timeoutDelay = 2000; // delay in ms
+//   setTimeout(showCurseAndBeetlejuice, timeoutDelay);
+// };
+
+// function genSpin() {
+//   headspinDiv.style.display = 'block';
+//   };
+
+//  //Click event listener for displayinging the head spinner
+
+// document.addEventListener('click', function (event) {
+//   if (event.target.getElementById("finalButton")){
+//     genSpin();
+//   }
+// });
