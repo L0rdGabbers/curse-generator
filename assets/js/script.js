@@ -108,13 +108,4 @@ document.addEventListener('click', function (event) {
       playSound();
     }
   });
-
-//** VIDEO OPEN IN POP-UP */
-function openVideo(videoId, videoLabel) {
-    var iframe = document.getElementById("video");
-    iframe.src = "https://www.youtube.com/embed/" + videoId;
-    document.getElementById("popup").style.display = "block";
-}
-    // Set the label for the video
-    document.getElementById("video-label").textContent = videoLabel;
 }
