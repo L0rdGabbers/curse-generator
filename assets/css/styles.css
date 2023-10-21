@@ -24,7 +24,7 @@ h1, h2, h3, h5, a, p, label, input, button {
 
 /* color to purple on hover */
 .navbar a:hover {
-    color: #217712;
+    color: #8cc63e;
 }
 .nav-item.active{
     color: #fff;;
