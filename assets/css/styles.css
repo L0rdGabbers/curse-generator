@@ -7,6 +7,7 @@ html {
     background-image: url('../images/bats-and-moon.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 h1, h2, h3, a, p, label, input, button, output {
@@ -270,4 +271,9 @@ textarea {
     font-size: 25px;
     margin-bottom: 10px;
     color: #000000;
+}
+
+/* Beetlejuice's curse styling */
+#beetlejuice {
+    min-height: 70vh
 }
