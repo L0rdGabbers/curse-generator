@@ -7,9 +7,10 @@ html {
     background-image: url('../images/bats-and-moon.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
-h1, h2, h3, h5, h6, span a  {
+h1, h2, h3, a, p, label, input, button, output {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
     font-weight: bold;
@@ -24,31 +25,172 @@ h1, h2, h3, h5, h6, span a  {
 
 /* color to purple on hover */
 .navbar a:hover {
-    color: #217712;
+    color: #8cc63e;
 }
 .nav-item.active{
     color: #fff;;
     text-decoration: underline;  
 }
   
-  /* Apply Neucha font to regular paragraph text */
-p, input, button {
+/* Apply Neucha font to regular paragraph text */
+p, input, output, button {
     font-family: 'Neucha', cursive;
 }
 
 /* edit input background color*/
 .form-control {
-    background-color: green;
+    background-color: #75cb826b;
 }
 
 /* edit curse-level buttons*/
 .card-body a {
-    background-color: green;
+    background-color: #75cb826b;
     color: black;
 }
 .curse-level a {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.sections {
+    text-align: left;
+}
+
+.sections > div {
+    text-align: center;
+}
+
+.sections h2, h3 {
+    text-align: left;
+    font-size: xx-large;
+}
+
+.sections button {
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    border-color: #662d92;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sections button:hover {
+    background-color: #663399;
+    color: #ffffff; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+#finalButton {
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+    border-color: #662d92;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#finalButton:hover {
+    background-color: #663399;
+    color: #ffffff; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.semi-opaque-box {
+    margin: 20px;
+    background-color: rgba(130, 218, 109, 0.55); /* Green color with 70% opacity */
+    padding: 20px;
+    border: 5px solid rgb(255, 255, 255); /* Black border for contrast */
+    border-radius: 10px;
+    text-align: left;
+}
+
+/*logo*/
+.logo{
+    height: 100px;
+    width: 200px;
+    animation: spookyFlicker 2s infinite;
+    transition: transform 0.5s ease-in-out;
+    background-color: #FFFFFF;
+    border-radius: 50% 50% 50% 50% / 50% 50% 100% 100%; /* Bat eye-shaped border-radius */
+    box-shadow: 0 0 20px rgb(245, 244, 244); /* Adds a shadow for a spooky effect */
+}
+
+.logo:hover {
+    transform: scale(1.25);
+  }
+  /*logo animation*/
+  @keyframes spookyFlicker {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* Style for the video pop-ups */
+.video-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-thumbnails iframe {
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+/* Styles for the pop-up video container */
+.video-label {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Beetlejuice's curse styling */
+#beetlejuice {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 3rem;
+}
+
+#semi-opaque-box-curse {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(130, 218, 109, 0.55); 
+    padding: 20px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#headspin {
+    position: absolute;
+    bottom: 315px;
+    left: 50%;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    margin: -76px 0 0 -76px;
+    border: 10px solid purple;
+    border-radius: 50%;
+    background-image: url(../images/scary-face-spinner.jpg);
+    background-size: contain;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* styling the contact page*/
@@ -85,7 +227,7 @@ p, input, button {
     font-weight: 100;
     color: white;
     font-size: 20px;
- 
+
  }
 
  .contain {
@@ -95,7 +237,7 @@ p, input, button {
     align-items: center;
     margin-top: 30px;
  }
- 
+
 .contain .contact-info{
     width: 50%;
     display: flex;
@@ -242,7 +384,7 @@ p, input, button {
 
 .team .member .member-info{
     padding-left: 30px;
-    
+
 }
 .team .member {
     font-weight: 300;
@@ -322,207 +464,24 @@ section{
     color: green;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* styling the contact page*
-.container-contact {
-    text-align: center;
-    padding: 20px;
-}
-
-/* Style the heading *
-h1 {
-    font-size: 2rem;
-}
-
-/* Style the paragraph *
-p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-/* Style the contact box *
-.contact-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-image: url('../images/bats-and-moon.jpg'); *
-    background-color: #6e5f68;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Style the left side of the contact box *
-.contact-left {
-    text-align: center;
-    padding: 20px;
-    width: 40%;
-}
-
-/* Style the form *
-form {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Style the input groups
-.input-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.input-group {
-    width: 48%;
-}
-.padding {
-    padding-top: 10px ;
-}
-/* Style labels *
-label {
-    font-weight: bold;
-    display: block;
-    color: rgb(201, 191, 191);
-}
-
-/* Style form controls *
-input[type="text"],
-input[type="email"]
- {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    color: #217712;
-    border: #5f0c0c;
-    border-radius: 5px;
-    outline: none;
-}
-
-/* Style the right side of the contact box *
-.contact-right {
-    text-align: center;
-    padding: 20px;
-    width: 40%;
-} */
-
-
-
-/* Style the submit button *
-.submit-button-contact {
-    background-color: #42043f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Add hover effect to the button *
-.submit-button-contact:hover {
-    background-color: #25061e;
-}
-
-
-
-/* Style the form's text area *
-textarea {
-    width: 100% ;
-    outline: none;
-    
-}
-
-/* footer*/
-/* .container {
+/* this footer needs review*/
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     padding: 50px;
-}* */
-
-.semi-opaque-box {
-    background-color: rgba(130, 218, 109, 0.55); /* Green color with 70% opacity */
-    padding: 20px;
-    border: 5px solid rgb(255, 255, 255); /* Black border for contrast */
-    border-radius: 10px;
-    text-align: left;
+}
+/*new footer code*/
+.footer_bg {
+    position: sticky;
+    background-color: #000000;
+    top:100%;
 }
 
-/*logo*/
-.logo{
-    height: 100px;
-    width: 200px;
-    animation: spookyFlicker 2s infinite;
-    transition: transform 0.5s ease-in-out;
+/*footer hover*/
+.footer_icon i:hover,
+.footer_copyright:hover,
+.footer_name:hover{
+    color: #8cc63e;
 }
-
-.logo:hover {
-    transform: scale(1.25);
-  }
-  /*logo animation*/
-  @keyframes spookyFlicker {
-    0% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 0.8;
-    }
-    50% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 0.8;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-/* Style for the video pop-ups */
-.video-thumbnails {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.video-thumbnails a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Styles for the pop-up container */
-#popup {
-    /* Update pop-up size and position as needed */
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    z-index: 1;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#popup iframe {
-    width: 100%; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-}
-#video-label {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #662d92;
-}
-
