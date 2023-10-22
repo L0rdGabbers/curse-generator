@@ -115,16 +115,20 @@ const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
 function showCurseAndBeetlejuice() {
 
   const headspinDiv = document.getElementById('headspin');
+  const jumpingFooter = document.getElementById("foot");
   const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
 
+  jumpingFooter.style.display = "block";
   curseAndBeetlejuiceDiv.style.display = 'block';
   headspinDiv.style.display = 'none';
 };
 
 function genSpin() {
   const notPhussy = document.getElementById("phussy");
+  const jumpingFooter = document.getElementById("foot");
   const headspinDiv = document.getElementById('headspin'); 
  
+  jumpingFooter.style.display = "none";
   notPhussy.style.display = "none";
   headspinDiv.style.display = 'block';
 

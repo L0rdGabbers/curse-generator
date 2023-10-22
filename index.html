@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Neucha&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Beetlejuice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,20 +53,19 @@
         <div class="col-12">
             <div class="col-md-4 offset-md-4">
                 <div id="phussy" class="card semi-opaque-box" style="display: block;">
-                    <div class="card-body">
                         <section class="sections">
+                            <h2 class="card-title text-center fw-bold fs-3">Let's get cursing!!</h2>
                             <h2 class="fw-bold fs-4" aria-label="Insert your victim's name below">
-                                Step 1: Who's going to be your victim?
+                                Step 1: So who's it gonna be?
                             </h2>
+
                             <input id="name" name="name" type="text" placeholder="Your Victim's Name Here"
                                 aria-label="Insert your victim's name below" />
-                        </section>
-                    </div>
-                    <h2 class="card-title text-center fw-bold fs-4">How severe shall it be?</h2>
 
+                        </section>
                     <section class="sections">
                         <div>
-                            <h2 class="fw-bold fs-4">Step 2: Click Here to start your Curse!</h2>
+                            <h2 class="fw-bold fs-4">Step 2: Click Here to make a start!</h2>
                         </div>
                         <div>
                             <button class="scary-sound curse-button disabled" data-index="1" id="firstButton"
@@ -117,8 +115,7 @@
                         <div>
                             <div>
                                 <button id="finalButton" class="disabled scary-sound" aria-label="Cast your Curse">
-                                    <b id="fullPhrase">Quick! Click Here - This will cast the curse on your
-                                        victim!</b>
+                                    <b id="fullPhrase" class="fw-bold fs-3">Click Here - It's showtime!!</b>
                                 </button>
                             </div>
                         </div>
@@ -138,7 +135,7 @@
                         <img id="beetlejuice" src="./assets/images/beetlejuice-standing.png">
                     </div>
                     <div>
-                        <button id="refresh">Reeeeeefresh Me... Never trust the Living!</button>
+                        <button id="refresh" class="fw-bold fs-3">Reeeeeefresh Me... Never trust the Living!</button>
                     </div>
                 </div>
             </div>
@@ -146,7 +143,7 @@
         </div>
     </main>
     <!--footer-->
-    <footer class="footer_bg mt-4 text-white" style="padding:30px;">
+    <footer id="foot" class="footer_bg mt-4 text-white" style="padding:30px;">
         <div class="row  align-items-center justify-content-center fs-4">
             <div class="col footer_name">
                 <!--needds team name if needed or we can remove if not necessary-->
@@ -189,22 +186,22 @@
         crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        // Function for playing a sound
-        const audio = new Audio("assets/audio/evil-laugh-1.mp3");
-        const buttons = document.querySelectorAll("button.scary-sound");
+    // Function for playing a sound
+    const audio = new Audio("assets/audio/evil-laugh-1.mp3");
+    const buttons = document.querySelectorAll("button.scary-sound");
 
-        buttons.forEach(button => {
-            button.addEventListener("click", () => {
-                audio.play();
-            });
-        });
+    buttons.forEach(button => {
+    button.addEventListener("click", () => {
+    audio.play();
+    });
+    });
     </script>
     <script src="./assets/js/script.js"></script>
 </body>
