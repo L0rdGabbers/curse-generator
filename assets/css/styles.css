@@ -103,6 +103,151 @@ p, input, output, button {
     transition: background-color 0.3s ease-in-out; 
 }
 
+#refresh {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    border-radius: 6px;
+    border-color: #662d92;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#refresh:hover {
+    background-color: #663399;
+    color: #ffffff; 
+    transition: background-color 0.3s ease-in-out; 
+}
+/* syling the contact page*/
+
+.container-contact {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2rem;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Style the contact box */
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/bats-and-moon.jpg');
+    /* background-color: #410808; */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style the left side of the contact box */
+.contact-left {
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+}
+
+/* Style the form */
+form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the input groups */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 48%;
+}
+.padding {
+    padding-top: 10px ;
+}
+/* Style labels */
+label {
+    font-weight: bold;
+    display: block;
+    color: rgb(201, 191, 191);
+}
+
+/* Style form controls */
+input[type="text"],
+input[type="email"]
+ {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    color: #217712;
+    border: #5f0c0c;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style the right side of the contact box */
+.contact-right {
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+}
+
+
+
+/* Style the submit button */
+.submit-button-contact {
+    background-color: #42043f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the button */
+.submit-button-contact:hover {
+    background-color: #25061e;
+}
+
+
+
+/* Style the form's text area */
+textarea {
+    width: 100% ;
+    outline: none;
+    
+}
+
+/* this footer needs review*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+/*new footer code*/
+.footer_bg {
+    position: sticky;
+    background-color: #000000;
+    top:100%;
+}
+
+/*footer hover*/
+.footer_icon i:hover,
+.footer_copyright:hover,
+.footer_name:hover{
+    color: #8cc63e;
+}
+
 .semi-opaque-box {
     margin: 20px;
     background-color: rgba(130, 218, 109, 0.55); /* Green color with 70% opacity */

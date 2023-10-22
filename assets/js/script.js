@@ -22,7 +22,6 @@ let phraseListOne = [
 ];
 let phraseListTwo = [
   "Be covered in",
-  "Be drenched in",
   "Suffer under",
   "Endure",
   "Wade through",
@@ -33,32 +32,6 @@ let phraseListTwo = [
   "Endure the torment of",
 ];
 let phraseListThree = [
-  // "a mountain of Beetlejuice's poop!",
-  // "buckets of Beetlejuice spittle!",
-  // "a lake of boiling Beetle'JUICE! (whatever that is, use your imagination)",
-  // "rotten corpses for a million and one years! ...that is such a long time",
-  // "your shadow takes on a mischievous life of its own.",
-  // "your favorite costume wig becomes possessed and turns into a sentient Medusa headpiece.",
-  // "Jack-o'-lanterns spontaneously burst into spooky ghost flames.",
-  // "your bathroom mirror always reveals your inner ghostly self.",
-  // "Halloween decorations come to life, staging their own monster parade.",
-  // "house only accessible through secret doorways to unexpected places.",
-  // "candy bowl filled with candy corn that multiplies when you look away.",
-  // "footsteps in the dark always sound like eerie tap dancing.",
-  // "house is haunted by invisible sandworms.",
-  // "candy wrappers scream when you try to open them.",
-  // "refrigerator is forever stocked with expired ghostly leftovers.",
-  // "alarm clock plays 'Day-O' song every morning.",
-  // "house filled with mirrors that only reflect your worst fears.",
-  // "candy bowl dispenses live snakes instead of treats.",
-  // "yard decorations turn into a zombie dance party at midnight.",
-  // "Halloween party guests become invisible and play pranks on each other.",
-  // "beetlejuice movie plays on loop for a week.",
-  // "kitchen utensils take on a life of their own, performing a spooky symphony.",
-  // "front door becomes a portal to the Netherworld for mischievous spirits.",
-  // "candy apples turn into mini crystal balls that reveal your future.",
-  // "Halloween masks reveal your true face to the world.",
-
   "a mountain of Beetlejuice's poop!",
   "buckets of Beetlejuice spittle!",
   "a lake of boiling Beetle'JUICE! (whatever that is, use your imagination)",
@@ -73,6 +46,12 @@ let phraseListThree = [
   "Cauldrons bubbling with enchanted brews",
   "Ghosts and goblins at the doorstep",
   "Skeletons dancing to the monster mash",
+  "candy someone else sucked and spat out",
+  "screaming halloween masks",
+  "creepy crawlies",
+  "tapdancing spiders",
+  "invisible sandworms",
+  "friends and family dancing to the Banana Boat song on loop"
 ];
 
 let phraseListIndexMap = [phraseListOne, phraseListTwo, phraseListThree];
@@ -126,15 +105,6 @@ buttonFinal.addEventListener("click", (e) => {
 const headspinDiv = document.getElementById('headspin');
 const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
 
-
- //Click event listener for displayinging the head spinner
-
-// document.addEventListener('click', function (event) {
-//   if (event.target.getElementById("finalButton")){
-//     genSpin();
-//   }
-// });
-
     genSpin();
 
     genHex();
@@ -158,7 +128,7 @@ function genSpin() {
   notPhussy.style.display = "none";
   headspinDiv.style.display = 'block';
 
-  const timeoutDelay = 2000; // delay in ms
+  const timeoutDelay = 3000; // delay in ms
   setTimeout(showCurseAndBeetlejuice, timeoutDelay);
 };
 
@@ -196,40 +166,3 @@ document.addEventListener('click', function (event) {
       playSound();
     }
   });
-
-//** VIDEO OPEN IN POP-UP */
-function openVideo(videoId, videoLabel) {
-    var iframe = document.getElementById("video");
-    iframe.src = "https://www.youtube.com/embed/" + videoId;
-    document.getElementById("popup").style.display = "block";
-}
-    // Set the label for the video
-    document.getElementById("video-label").textContent = videoLabel;
-
-
-
-
-// // Function to display head spinner when finalButton is clicked for a set amount of time
-
-// const headspinDiv = document.getElementById('headspin');
-// const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
-
-// function showCurseAndBeetlejuice() {
-//   curseAndBeetlejuiceDiv.style.display = 'block';
-//   headspinDiv.style.display = 'none';
-
-//   const timeoutDelay = 2000; // delay in ms
-//   setTimeout(showCurseAndBeetlejuice, timeoutDelay);
-// };
-
-// function genSpin() {
-//   headspinDiv.style.display = 'block';
-//   };
-
-//  //Click event listener for displayinging the head spinner
-
-// document.addEventListener('click', function (event) {
-//   if (event.target.getElementById("finalButton")){
-//     genSpin();
-//   }
-// });
