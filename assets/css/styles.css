@@ -93,6 +93,20 @@ p, input, output, button {
     transition: background-color 0.3s ease-in-out; 
 }
 
+#refresh {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    border-radius: 6px;
+    border-color: #662d92;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#refresh:hover {
+    background-color: #663399;
+    color: #ffffff; 
+    transition: background-color 0.3s ease-in-out; 
+}
 /* syling the contact page*/
 
 .container-contact {
