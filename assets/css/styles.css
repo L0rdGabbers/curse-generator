@@ -10,7 +10,7 @@ html {
     background-position: center;
 }
 
-h1, h2, h3, a, p, label, input, button, output {
+h1, h2, h3, a, p, label, input, button, output, span {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
     font-weight: bold;
@@ -37,11 +37,7 @@ h1, h2, h3, a, p, label, input, button, output {
     color: #fff;;
     text-decoration: underline;  
 }
-/* .nav-link.active {
-    color: white;
-    text-decoration: underline; 
-  } */
-  
+
 /* Apply Neucha font to regular paragraph text */
 p, input, output, button {
     font-family: 'Neucha', cursive;
@@ -216,8 +212,6 @@ input[type="email"]
     background-color: #25061e;
 }
 
-
-
 /* Style the form's text area */
 textarea {
     width: 100% ;
@@ -258,8 +252,8 @@ textarea {
 
 /*logo*/
 .logo{
-    height: 100px;
-    width: 200px;
+    height: 6vw;
+    width: 12vw;
     animation: spookyFlicker 2s infinite;
     transition: transform 0.5s ease-in-out;
     background-color: #FFFFFF;
@@ -324,6 +318,10 @@ textarea {
     border: 5px solid rgb(255, 255, 255);
     border-radius: 10px;
     text-align: left;
+}
+
+.beetlejuice-dialogue {
+    width: 100vw;
 }
 
 #headspin {
@@ -653,4 +651,13 @@ section{
 
 #headspin-div {
     height: 100vh;
+}
+
+/* Media Queries */
+
+@media (max-width: 1250px) {
+    .logo {
+        width: 4rem;
+        height: 2rem;
+    }
 }
