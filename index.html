@@ -193,15 +193,16 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    // Function for playing a sound
-    const audio = new Audio("assets/audio/evil-laugh-1.mp3");
-    const buttons = document.querySelectorAll("button.scary-sound");
+    <script>
+        // Function for playing a sound //
+        const audio = new Audio("assets/audio/evil-laugh-1.mp3");
+        const buttons = document.querySelectorAll("button.scary-sound");
 
-    buttons.forEach(button => {
-    button.addEventListener("click", () => {
-    audio.play();
-    });
-    });
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+            audio.play();
+            });
+        });
     </script>
     <script src="./assets/js/script.js"></script>
 </body>
