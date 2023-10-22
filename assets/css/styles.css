@@ -47,6 +47,10 @@ p, input, output, button {
     font-family: 'Neucha', cursive;
 }
 
+#firstResult, #secondResult, #thirdResult, #finalButton {
+    font-family: 'Neucha', cursive;
+}
+
 /* edit input background color*/
 .form-control {
     background-color: #75cb826b;
@@ -199,8 +203,6 @@ input[type="email"]
     padding: 20px;
     width: 40%;
 }
-
-
 
 /* Style the submit button */
 .submit-button-contact {
@@ -639,4 +641,19 @@ section{
 .footer_copyright:hover,
 .footer_name:hover{
     color: #8cc63e;
+}
+
+#name {
+    width: 100%;
+    text-align: center;
+}
+
+#fullPhrase, #refresh {
+    font-family: 'Amatic SC', cursive;
+    padding: 25px;
+    text-align: center;
+}
+
+#headspin-div {
+    height: 100vh;
 }
