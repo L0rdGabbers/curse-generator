@@ -10,7 +10,7 @@ html {
     background-position: center;
 }
 
-h1, h2, h3, a, p, label, input, button, output, span {
+h1, h2, h3, a, p, label, input, button, output, span, b {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
     font-weight: bold;
@@ -45,6 +45,10 @@ p, input, output, button {
 
 #firstResult, #secondResult, #thirdResult, #finalButton {
     font-family: 'Neucha', cursive;
+}
+
+#finalResult {
+    font-size: 3.5vw;
 }
 
 /* edit input background color*/
@@ -308,6 +312,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     min-height: 3rem;
+    max-width: 39vw;
 }
 
 #semi-opaque-box-curse {
@@ -338,6 +343,10 @@ textarea {
     background-size: contain;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+}
+
+#refresh-container {
+    padding-left: 2.5rem;
 }
 
 @keyframes spin {
@@ -664,4 +673,19 @@ section{
     .navbar {
         padding-left: 1rem;
     }
+}
+
+@media (max-width: 767px) {
+    #semi-opaque-box-curse {
+        margin-left: 60px;
+    }
+
+    #beetlejuice {
+        max-width: 56vw;
+        margin-left: 21vw;
+    }
+
+    #finalResult {
+        font-size: 1rem;
+      }
 }
