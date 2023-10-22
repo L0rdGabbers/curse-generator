@@ -21,7 +21,13 @@ h1, h2, h3, a, p, label, input, button, output {
     color: #fff;
     font-family: 'Amatic SC', cursive;
     transition: color 0.3s;
+    align-items: center;
 }
+
+#navbar-nav {
+    margin-left: 50%; /* Move the links to the right */
+}
+
 
 /* color to purple on hover */
 .navbar a:hover {
@@ -31,6 +37,10 @@ h1, h2, h3, a, p, label, input, button, output {
     color: #fff;;
     text-decoration: underline;  
 }
+/* .nav-link.active {
+    color: white;
+    text-decoration: underline; 
+  } */
   
 /* Apply Neucha font to regular paragraph text */
 p, input, output, button {
