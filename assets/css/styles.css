@@ -121,12 +121,6 @@ p, input, output, button {
     color: #ffffff; 
     transition: background-color 0.3s ease-in-out; 
 }
-/* syling the contact page*/
-
-.container-contact {
-    text-align: center;
-    padding: 20px;
-}
 
 /* Style the heading */
 h1 {
@@ -143,11 +137,14 @@ p {
 .contact-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     background-image: url('../images/bats-and-moon.jpg');
-    /* background-color: #410808; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     padding: 20px;
     border-radius: 10px;
+    margin-left: 4rem;
 }
 
 /* Style the left side of the contact box */
@@ -365,8 +362,8 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-image: url('../images/bats-and-moon.jpg'); */
-    background-color: rgba(63, 4, 63) 
+    text-align: center;
+    padding: 20px;
 }
 
 .container-contact .content-contact {
