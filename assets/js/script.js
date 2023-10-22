@@ -140,12 +140,14 @@ function checkName() {
 
 // **** ENSURE USER HAS PRESSED ALL BUTTONS **** //
 function checkButtons() {
-  if (document.getElementById("finalButton").classList.contains("disabled")) {
-    document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">You've missed some buttons!</b>`
-    return false;
+  if ((document.getElementById("firstResult").innerHTML == ``) || (
+    document.getElementById("secondResult").innerHTML == ``) || (
+    document.getElementById("thirdResult").innerHTML == ``)) {
+      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">You've missed some buttons!</b>`
+      return false;
   } else {
-    document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">Click Here - It's showtime!!</b>`
-    return true;
+      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">Click Here - It's showtime!!</b>`
+      return true;
   }
 }
 

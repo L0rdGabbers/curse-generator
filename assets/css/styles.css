@@ -10,7 +10,7 @@ html {
     background-position: center;
 }
 
-h1, h2, h3, a, p, label, input, button, output, span, b {
+h1, h2, h3, a, p, label, input, button, output, span {
     font-family: 'Amatic SC', cursive;
     font-size: xx-large;
     font-weight: bold;
@@ -39,7 +39,7 @@ h1, h2, h3, a, p, label, input, button, output, span, b {
 }
 
 /* Apply Neucha font to regular paragraph text */
-p, input, output, button {
+p, input, output, button, b {
     font-family: 'Neucha', cursive;
 }
 
@@ -48,7 +48,7 @@ p, input, output, button {
 }
 
 #finalResult {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
 }
 
 /* edit input background color*/
