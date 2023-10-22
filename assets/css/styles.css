@@ -21,7 +21,13 @@ h1, h2, h3, a, p, label, input, button, output {
     color: #fff;
     font-family: 'Amatic SC', cursive;
     transition: color 0.3s;
+    align-items: center;
 }
+
+#navbar-nav {
+    margin-left: 50%; /* Move the links to the right */
+}
+
 
 /* color to purple on hover */
 .navbar a:hover {
@@ -31,6 +37,10 @@ h1, h2, h3, a, p, label, input, button, output {
     color: #fff;;
     text-decoration: underline;  
 }
+/* .nav-link.active {
+    color: white;
+    text-decoration: underline; 
+  } */
   
 /* Apply Neucha font to regular paragraph text */
 p, input, output, button {
@@ -336,4 +346,297 @@ textarea {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* styling the contact page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container-contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url('../images/bats-and-moon.jpg'); */
+    background-color: rgba(63, 4, 63) 
+}
+
+.container-contact .content-contact {
+    max-width: 800px;
+    text-align: center;
+}
+
+.container-contact .content-contact  h2{
+   font-size: 36px;
+   font-weight: 500;
+   color: green;
+
+}
+.container-contact .content-contact  p{
+    font-weight: 100;
+    color: white;
+    font-size: 20px;
+
+ }
+
+ .contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+ }
+
+.contain .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contain .contact-info .contact-box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+
+}
+.contain .contact-info .contact-box .icon{
+    min-width: 60px;
+    height: 60px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+
+.contain .contact-info .contact-box .contact-text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contain .contact-info .contact-box .contact-text h3{
+    font-weight: 1100;
+    color: green;
+}
+
+.contact-form {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+
+.contact-form  h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500 ;
+
+}
+
+.contact-form  .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form  .input-box input,.contact-form  .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+
+  .contact-form  .input-box span{
+     position: absolute;
+     left: 0;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 1üpx 0;
+     pointer-events: none;
+     transition: 0.5s;
+     color: #666;
+
+  }
+
+  .contact-form  .input-box  input:focus ~ span,
+  .contact-form  .input-box  input:valid ~ span ,
+  .contact-form  .input-box  textarea:focus ~ span, 
+  .contact-form  .input-box  textarea:valid ~ span
+  {
+    color:rgba(63, 4, 63);
+    font-size: 12px;
+    transform: translateY(-20px);
+
+ }
+
+ .contact-form  .input-box  input[type="submit"] {
+    width: 100px;
+    background: rgba(63, 4, 63);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+ }
+ @media (max-width:991px) {
+    .container-contact{
+        padding:50px;
+
+    }
+    .contain{
+        flex-direction: column;
+    }
+
+    .contain .contact-info{
+        margin: bottom 40px;
+    }
+    .contain .contact-info .contact-form{
+       width: 100%;
+    }
+
+ }
+
+
+ /*  style the team section */
+ .team .member {
+    position: relative;
+    padding: 20px; 
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #fff;
+    transition: all 0.3s; 
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.team .member:hover {
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.team .member .team-3{
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.team .member .member-info{
+    padding-left: 30px;
+
+}
+.team .member {
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: green; 
+}
+.team .member span{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+    color: #33004D;;
+
+}
+.team .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: black;
+    bottom: 0;
+    left: 0;
+
+}
+.team .member p {
+    margin-bottom: 10px 0 0 0;
+    color: #3a084b;
+    font-weight: 600;
+}
+
+.team .member .social i {
+font-size: 18px;
+color: #33004D;
+}
+
+.team .member .social a {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 25px; 
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #3a084b; 
+    text-decoration: none; 
+    color: #662d92; 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.team .member .social a:hover {
+    background-color: #662d92; 
+    border-color: transparent; 
+
+}
+
+.team .member .social a+a {
+    margin-left: 8px;
+}
+
+section{
+    padding: 1px 0;
+    overflow: hidden;
+}
+
+.section-title{
+    text-align: center;
+    padding-bottom: 30px;
+    color:green;
+}
+.right {
+    font-size: small;
+    text-align: center;
+    padding-top: 100px;
+    color: green;
+}
+
+/* this footer needs review*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+/*new footer code*/
+.footer_bg {
+    position: sticky;
+    background-color: #000000;
+    top:100%;
+}
+
+/*footer hover*/
+.footer_icon i:hover,
+.footer_copyright:hover,
+.footer_name:hover{
+    color: #8cc63e;
 }
