@@ -15,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Neucha&display=swap" rel="stylesheet">
-    <meta name="description"content="Beetlejuice site is website of Game of victim(not real) and curse on Halloween Day. It is all about having fun. Designed and implemented  by Halloween_Hackathon Team3.">
-    <meta name="keywords"content="History, culture, Folklore, Margic, darkly, comedic, asupernatural , having fun,film, project, Team3, Halloween, Hackathon ,nature, science,UK, Ireland ,London, Germany, Sweden, Europe">
+    <meta name="description" content="Beetlejuice site is website of Game of victim(not real) and curse on Halloween Day. It is all about having fun. Designed and implemented  by Halloween_Hackathon Team3.">
+    <meta name="keywords" content="History, culture, Folklore, Margic, darkly, comedic, asupernatural , having fun,film, project, Team3, Halloween, Hackathon ,nature, science,UK, Ireland ,London, Germany, Sweden, Europe">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -33,9 +33,9 @@
                 </button>
                 <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-animation fs-5 " href="game.html">Game
-                            </a>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link-animation fs-5 " href="index.html">Game <span
+                                    class="sr-only"></span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link-animation fs-5" href="history.html">History</a>
@@ -56,27 +56,96 @@
                 <div id="phussy" class="card semi-opaque-box" style="display: block;">
                         <section class="sections">
                             <h2 class="card-title text-center fw-bold fs-3">Let's get cursing!!</h2>
-
-
-                <div id="welcome">
-                    <span class="image-container">
-                        <img id="welcome-image" src="assets/images/its-showtime2.gif" aria-label="welcome image">
-                        <div id="welcome-message">
-                            <p> Welcome to my World. Don't be SCARED...Let's play a little game? </p>
-                            <p> I'm The Ghost With The Most, I'll help ya curse anyone you like! </p>
-                            <p> Let's Turn On The Juice And See What Shakes Loose! </p>
-                            <button>
-                            <a class="nav-link nav-link-animation fs-5" href="game.html">CLICK to PLAY</a>
-                        </button>
+                            <h2 class="fw-bold fs-4" aria-label="Insert your victim's name below">
+                                Step 1: So who's it gonna be?
+                            </h2>
+                            <input id="name" name="name" type="text" placeholder="Victim's name"
+                                aria-label="Insert your victim's name below">
+                        </section>
+                    <section class="sections">
+                        <div>
+                            <h2 class="fw-bold fs-4">Step 2: Click Here to make a start!</h2>
+                        </div>
+                        <div>
+                            <button class="scary-sound curse-button disabled" data-index="1" id="firstButton"
+                                aria-label="Start your Curse!">
+                                Curse!
+                            </button>
+                        </div>
+                        <div>
+                            <output class="output">
+                                <b id="firstResult"></b>
+                            </output>
+                        </div>
+                    </section>
+                    <section class="sections">
+                        <div>
+                            <h2 class="fw-bold fs-4">Step 3: Click Here to get the middle of your Curse!</h2>
+                        </div>
+                        <div>
+                            <button class="scary-sound button curse-button disabled" data-index="2" id="secondButton"
+                                aria-label="The middle of your Curse!">
+                                Curse!
+                            </button>
+                        </div>
+                        <div>
+                            <output class="output" id="secondOutput">
+                                <b id="secondResult"></b>
+                            </output>
+                        </div>
+                    </section>
+                    <section class="sections">
+                        <div>
+                            <h2 class="fw-bold fs-4">Step 4: Click Here to cast the last part of your Curse</h2>
+                        </div>
+                        <div>
+                            <button class="scary-sound button curse-button disabled" data-index="3" id="thirdButton"
+                                aria-label="The last part of your Hex">
+                                Curse!
+                            </button>
+                        </div>
+                        <div>
+                            <output class="output" id="thirdOutput">
+                                <b id="thirdResult"></b>
+                            </output>
+                        </div>
+                    </section>
+                    <div>
+                        <div>
+                            <div>
+                                <button id="finalButton" class="disabled scary-sound" aria-label="Cast your Curse">
+                                    <b id="fullPhrase" class="fw-bold fs-3">Click Here - It's showtime!!</b>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    </span>
                 </div>
+            </div>
+            <div id="curse-and-beetlejuice" class="col-md-12" style="display:none">
+                <div class="row justify-content-center align-items-center beetlejuice-dialogue">
+                    <div class="col-md-4">
+                        <div id="semi-opaque-box-curse">
+                            <output class="output">
+                                <b id="finalResult"></b>
+                            </output>
+                        </div>
+                    </div>
+                    <div class="col-md-4 justify-content-center align-items-center">
+                        <img id="beetlejuice" src="./assets/images/beetlejuice-standing.png" alt="Beetlejuice announcing your curse">
+                    </div>
+                    <div id="refresh-container">
+                        <button id="refresh" class="fw-bold fs-3 mt-3">Reeeeeefresh Me... Never trust the Living!</button>
+                    </div>
+                </div>
+            </div>
+            <div id="headspin" style="display:none" aria-label="Beetlejuice's spinning head"></div>
+        </div>
     </main>
     <!--footer-->
     <footer id="foot" class="footer_bg mt-4 text-white" style="padding:30px;">
         <div class="row  align-items-center justify-content-center fs-4">
             <div class="col footer_name">
-                <!--needs team name if needed or we can remove if not necessary-->
+                <!--needds team name if needed or we can remove if not necessary-->
                 <h2>The Magic Numb3ers</h2>
             </div>
             <div class="col footer_copyright">

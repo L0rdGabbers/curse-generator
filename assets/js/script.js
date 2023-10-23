@@ -113,7 +113,7 @@ function showCurseAndBeetlejuice() {
   jumpingFooter.style.display = "block";
   curseAndBeetlejuiceDiv.style.display = 'block';
   headspinDiv.style.display = 'none';
-};
+}
 
 function genSpin() {
   const notPhussy = document.getElementById("phussy");
@@ -126,15 +126,15 @@ function genSpin() {
 
   const timeoutDelay = 3000; // delay in ms
   setTimeout(showCurseAndBeetlejuice, timeoutDelay);
-};
+}
 
 // **** ENSURE USER INPUTS TEXT TO START HEX CODE ****
 function checkName() {
   if (document.getElementById("name").value !== "") {
-    document.getElementById("name").placeholder = ""
+    document.getElementById("name").placeholder = "";
     return true;
   } else {
-    document.getElementById("name").placeholder = "I require a name!!"
+    document.getElementById("name").placeholder = "I require a name!!";
     return false;
 }}
 
@@ -143,10 +143,10 @@ function checkButtons() {
   if ((document.getElementById("firstResult").innerHTML == ``) || (
     document.getElementById("secondResult").innerHTML == ``) || (
     document.getElementById("thirdResult").innerHTML == ``)) {
-      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">You've missed some buttons!</b>`
+      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">You've missed some buttons!</b>`;
       return false;
   } else {
-      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">Click Here - It's showtime!!</b>`
+      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">Click Here - It's showtime!!</b>`;
       return true;
   }
 }
@@ -160,7 +160,7 @@ refreshPage.addEventListener("click", (e) => {
 function genHex() {
   let finalPhrase = document.getElementById("finalResult");
   let name = document.getElementById("name").value;
-  phrase = `${FIRST_PHRASE.innerHTML} ${SECOND_PHRASE.innerHTML} ${THIRD_PHRASE.innerHTML}`;
+  let phrase = `${FIRST_PHRASE.innerHTML} ${SECOND_PHRASE.innerHTML} ${THIRD_PHRASE.innerHTML}`;
   finalPhrase.innerHTML = name + " " + phrase.toLowerCase() + "!";
 }
 
