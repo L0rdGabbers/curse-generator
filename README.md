@@ -18,7 +18,7 @@ The last page is the contact page, where a user can can make an enquiry by filli
 View the live site
  [here](https://l0rdgabbers.github.io/curse-generator/).
 
-![Mockup](assets/images/readme-images/mock-website.png)
+![Mockup](assets/images/readme-images/beetlejuice-responsive.png)
 
 ## Features 
 
