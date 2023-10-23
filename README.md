@@ -16,7 +16,7 @@ The 'history' page features a few paragraphs of text detailing the history, both
 
 
 . View the live site here
- [here]( https://)
+ [here](https://l0rdgabbers.github.io/curse-generator/)
 
 ![Mockup](assets/images/readme-images/moch-wsite.png)
 
@@ -233,7 +233,7 @@ _Scenario _
 
 Steps to test: As expected
 
-1. Navigate to [BettleJuice - Game Page]( https://)
+1. Navigate to [BettleJuice - Game Page]( https://l0rdgabbers.github.io/curse-generator/)
 2. Enter the name of the victim to be curse:
     Name: AdeBe 
 3. Click Here to make a start!
@@ -259,7 +259,7 @@ Testing was performed on the contact page. It will navigate the Success Page(For
 
 Steps to test:
 ### If the user inputs the user name and correct email with email format.
-Username: Ada
+Full Name: Macj Moen
 Email; abe@gmail.com
 Submit;
 on clicking submit, It will navigate the user to Successful Message, 
@@ -268,7 +268,7 @@ on clicking submit, It will navigate the user to Successful Message,
 
 Steps to test:
 But  if the user e.g;
-Username:
+Full Name:
 Email; uju@gmail.com
 Submit;
 on clicking submit, there will a message telling the user that name filed must not be empty
@@ -277,7 +277,7 @@ on clicking submit, there will a message telling the user that name filed must n
 
 Steps to test:
 But  if the user e.g;
-Username: uju
+Full Name: Code Silver
 Email; gmail.com
 Submit;
 on clicking submit, there will a message telling the user that email field must contain @ 
@@ -342,7 +342,7 @@ The following git commands were used throughout development to push code to the 
   - Click 'Save'
   - A live link will be displayed in a green banner when published successfully. 
 
-The live link can be found here -  https://ujuadimora-dev.github.io/FunTime-Quiz/
+The live link can be found here -  https://l0rdgabbers.github.io/curse-generator/
 
 ### Clone the Repository Code Locally
 
@@ -380,4 +380,4 @@ We use the  colours  combimation which mirror the pop-culture icon of Beetlejuic
 All contents and  media or image on this site was Fantasy. 
 ### Media
 
-Website is live here [Bettlejuice website]( https://)
+Website is live here [Bettlejuice website]( https://l0rdgabbers.github.io/curse-generator/)
