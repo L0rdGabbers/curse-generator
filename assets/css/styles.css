@@ -288,11 +288,21 @@ textarea {
   }
 
 /* Style for the video pop-ups */
+#video-links {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
 .video-thumbnails {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-thumbnails iframe {
@@ -336,6 +346,22 @@ textarea {
     z-index: 1;
     width: 200px;
     height: 200px;
+    margin: -76px 0 0 -76px;
+    border: 10px solid purple;
+    border-radius: 50%;
+    background-image: url(../images/scary-face-spinner.jpg);
+    background-size: contain;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+} */
+
+#headspin {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    z-index: 1;
+    width: 155px;
+    height: 155px;
     margin: -76px 0 0 -76px;
     border: 10px solid purple;
     border-radius: 50%;
@@ -688,4 +714,14 @@ section{
     #finalResult {
         font-size: 1rem;
       }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+    .video-thumbnails {
+        flex-direction: column; /* Change to column layout */
+    }
+
+    iframe {
+        width: 245px;
+    }
 }
