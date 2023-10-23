@@ -16,9 +16,9 @@ The 'history' page features a few paragraphs of text detailing the history, both
 
 
 . View the live site here
- [here]( https://)
+ [here](https://l0rdgabbers.github.io/curse-generator/)
 
-![Mockup](assets/images/readme-images/moch-site.png)
+![Mockup](assets/images/readme-images/moch-wsite.png)
 
 ## Sprints
 ### Friday
@@ -45,13 +45,13 @@ The 'history' page features a few paragraphs of text detailing the history, both
 *	Contains links to the Beetlejuice Logo,  History, and Contact pages and will be responsive at 320px, 600px, and 50em. 1024px
 *	This will allow users to easily navigate between the pages within the site on these sizes devices.
 
-![Nav Menu](assets/images/readme-images/)
+![Nav Menu](assets/images/readme-images/Nav-bar.PNG)
 
 
 *	Footer
 *	This  contain icons as links to social media websites that will open in new tabs. Icons will be accessible to the visually impaired who may be using a screen reader, by the use of aria labels. 
 
-![Footer](assets/images/readme-images/footer_page.PNG)
+![Footer](assets/images/readme-images/footer-page.PNG)
 
 
 ## Landing Page
@@ -79,7 +79,7 @@ This page shows the contact form
 * On successful submission of the contact form, the user will be navigated to Thank.html displaying Thank you message.
 
 
-![Contact us page](assets/images/readme-images/contage-page.png)
+![Contact us page](assets/images/readme-images/contack-page.png)
 
 
 ## The succesful Message
@@ -88,13 +88,6 @@ This page shows the contact form
 
 ![Thank You message](assets/images/readme-images/successful-message.PNG)
 
-## Tsection
-### Quiz  section Page( the credit goes to this site https://youtu.be/2Bpiluefkh8 , it is a You Tube  tutorial video)
-* This page has ten(10) questions and four (4)options to select from each time a question is being asked
-The  consists of ;
-1.Score borad for the Great Score
-2. Score board for a poor score or result
-3. The user must select option before going to another question
 
 
 ## The following steps below shows how the App works
@@ -113,7 +106,7 @@ The  consists of ;
 ### Features Left to Implement
 
 * 	As a future enhancement, the contact form will be updated with to send an email to “Beetlejuice Team 's email” and give the user notification information.
-*	There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'FunTime-Quiz'
+*	There would be dedicated Twitter, youtube, and Facebook handle dedicated to 'BeetleJuice'
 *	There should Google map showing the location of Beetlejuce company
 *  
 *
@@ -216,7 +209,7 @@ Issue : After keyboard controls were implemented, while testing the site with wi
 
 ### Contact Page
 
-![contact us](assets/images/readme-images/contage-page.png)
+![contact us](assets/images/readme-images/contact_lighthous.PNG)
 
 ### Functional Testing
 
@@ -240,7 +233,7 @@ _Scenario _
 
 Steps to test: As expected
 
-1. Navigate to [BettleJuice - Game Page]( https://)
+1. Navigate to [BettleJuice - Game Page]( https://l0rdgabbers.github.io/curse-generator/)
 2. Enter the name of the victim to be curse:
     Name: AdeBe 
 3. Click Here to make a start!
@@ -266,7 +259,7 @@ Testing was performed on the contact page. It will navigate the Success Page(For
 
 Steps to test:
 ### If the user inputs the user name and correct email with email format.
-Username: Ada
+Full Name: Macj Moen
 Email; abe@gmail.com
 Submit;
 on clicking submit, It will navigate the user to Successful Message, 
@@ -275,7 +268,7 @@ on clicking submit, It will navigate the user to Successful Message,
 
 Steps to test:
 But  if the user e.g;
-Username:
+Full Name:
 Email; uju@gmail.com
 Submit;
 on clicking submit, there will a message telling the user that name filed must not be empty
@@ -284,7 +277,7 @@ on clicking submit, there will a message telling the user that name filed must n
 
 Steps to test:
 But  if the user e.g;
-Username: uju
+Full Name: Code Silver
 Email; gmail.com
 Submit;
 on clicking submit, there will a message telling the user that email field must contain @ 
@@ -349,7 +342,7 @@ The following git commands were used throughout development to push code to the 
   - Click 'Save'
   - A live link will be displayed in a green banner when published successfully. 
 
-The live link can be found here -  https://ujuadimora-dev.github.io/FunTime-Quiz/
+The live link can be found here -  https://l0rdgabbers.github.io/curse-generator/
 
 ### Clone the Repository Code Locally
 
@@ -378,13 +371,13 @@ We use the  colours  combimation which mirror the pop-culture icon of Beetlejuic
 ## Credits 
 
 * (https://www.w3schools.com/)
-    *  some of the code was used from this site to create form. Styles were changed to suit styling on my Website. I recommend this site for every beginners.
+    *  some of the code was used from this site to create form. Styles were changed to suit styling on our Website. I recommend this site for every beginners.
 
-   * https://stackoverflow.comThis site also help me in resovlving some issue in coding
+   * https://stackoverflow.comThis site also help our in resovlving some issue in coding
     
 ### Content 
 
 All contents and  media or image on this site was Fantasy. 
 ### Media
 
-Website is live here [Bettlejuice website]( https://)
+Website is live here [Bettlejuice website]( https://l0rdgabbers.github.io/curse-generator/)
