@@ -96,21 +96,13 @@ NAME_ELEMENT.addEventListener("focusout", () =>
 
 const buttonFinal = document.getElementById("finalButton");
 buttonFinal.addEventListener("click", (e) => {
-  
-  if (checkName()) {
-    const notPhussy = document.getElementById("phussy");  
-    
+  if (checkName() && checkButtons()) {
 // Function to display head spinner when finalButton is clicked for a set amount of time
-
-const headspinDiv = document.getElementById('headspin');
-const curseAndBeetlejuiceDiv = document.getElementById('curse-and-beetlejuice');
-
     genSpin();
-
     genHex();
   }
-
 });
+
 
 function showCurseAndBeetlejuice() {
 
@@ -145,6 +137,19 @@ function checkName() {
     document.getElementById("name").placeholder = "I require a name!!!"
     return false;
 }}
+
+// **** ENSURE USER HAS PRESSED ALL BUTTONS **** //
+function checkButtons() {
+  if ((document.getElementById("firstResult").innerHTML == ``) || (
+    document.getElementById("secondResult").innerHTML == ``) || (
+    document.getElementById("thirdResult").innerHTML == ``)) {
+      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">You've missed some buttons!</b>`
+      return false;
+  } else {
+      document.getElementById("finalButton").innerHTML = `<b id="fullPhrase" class="fw-bold fs-3">Click Here - It's showtime!!</b>`
+      return true;
+  }
+}
 
 // **** BACK TO TOP AND RELOAD PAGE CODE ****
 const refreshPage = document.getElementById("refresh");

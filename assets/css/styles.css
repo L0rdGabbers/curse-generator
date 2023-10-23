@@ -39,12 +39,16 @@ h1, h2, h3, a, p, label, input, button, output, span {
 }
 
 /* Apply Neucha font to regular paragraph text */
-p, input, output, button {
+p, input, output, button, b {
     font-family: 'Neucha', cursive;
 }
 
 #firstResult, #secondResult, #thirdResult, #finalButton {
     font-family: 'Neucha', cursive;
+}
+
+#finalResult {
+    font-size: 2.5vw;
 }
 
 /* edit input background color*/
@@ -318,6 +322,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     min-height: 3rem;
+    max-width: 39vw;
 }
 
 #semi-opaque-box-curse {
@@ -366,6 +371,9 @@ textarea {
     animation: spin 2s linear infinite;
 }
 
+#refresh-container {
+    padding-left: 2.5rem;
+}
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -687,9 +695,27 @@ section{
         width: 4rem;
         height: 2rem;
     }
+
+    .navbar {
+        padding-left: 1rem;
+    }
 }
 
-/* Media query for screens 991px and below */
+@media (max-width: 767px) {
+    #semi-opaque-box-curse {
+        margin-left: 60px;
+    }
+
+    #beetlejuice {
+        max-width: 56vw;
+        margin-left: 21vw;
+    }
+
+    #finalResult {
+        font-size: 1rem;
+      }
+}
+
 @media (max-width: 991px) and (min-width: 767px) {
     .video-thumbnails {
         flex-direction: column; /* Change to column layout */
