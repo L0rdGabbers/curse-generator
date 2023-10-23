@@ -134,7 +134,7 @@ function checkName() {
     document.getElementById("name").placeholder = ""
     return true;
   } else {
-    document.getElementById("name").placeholder = "I require a name!!!"
+    document.getElementById("name").placeholder = "I require a name!!"
     return false;
 }}
 

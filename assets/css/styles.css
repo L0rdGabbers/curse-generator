@@ -29,8 +29,8 @@ h1, h2, h3, a, p, label, input, button, output, span {
 }
 
 
-/* color to purple on hover */
-.navbar a:hover {
+/* color to green on hover on anchors */
+.navbar a:hover, .member-info a:hover {
     color: #8cc63e;
 }
 .nav-item.active{
@@ -221,6 +221,11 @@ textarea {
     width: 100% ;
     outline: none;
     
+}
+
+.member-info a {
+    color: #000000;
+    text-decoration: none;
 }
 
 /* this footer needs review*/
