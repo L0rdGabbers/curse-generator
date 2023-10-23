@@ -353,12 +353,12 @@ textarea {
 
 #headspin {
     position: absolute;
-    bottom: 315px;
+    top: 315px;
     left: 50%;
     z-index: 1;
     width: 200px;
     height: 200px;
-    margin: -76px 0 0 -76px;
+    margin: 76px 0 0 -76px;
     border: 10px solid purple;
     border-radius: 50%;
     background-image: url(../images/scary-face-spinner.jpg);
@@ -367,21 +367,6 @@ textarea {
     animation: spin 2s linear infinite;
 }
 
-#headspin {
-    position: absolute;
-    top: 170px;
-    left: 50%;
-    z-index: 1;
-    width: 155px;
-    height: 155px;
-    margin: -76px 0 0 -76px;
-    border: 10px solid purple;
-    border-radius: 50%;
-    background-image: url(../images/scary-face-spinner.jpg);
-    background-size: contain;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
 
 #refresh-container {
     padding-left: 2.5rem;

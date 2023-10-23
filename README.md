@@ -39,7 +39,7 @@ View the live site
 #### Footer
 *	This  contain icons as links to social media websites that will open in new tabs. Icons will be accessible to the visually impaired who may be using a screen reader, by the use of aria labels. 
 
-![Footer](assets/images/readme-images/footer-page.png)
+![Footer](assets/images/readme-images/footer.png)
 
 #### Background Image
 * The site contains this background image of a full moon in a purple sky with black trees and bats, because it fitted the whole theme of Beetlejuice and Halloween as well as the site's colour scheme.
